@@ -9,8 +9,8 @@ In this kata, the function will take a string as its argument, and return a stri
 //R: return string, if string empty or no argument return empty string
 function toFreud(string){
     //return empty string
-    if(string === ''){
-        return string
+    if(string === '' || !string){
+        return ""
     }
     //split string and loop
     string = string.split(' ')
